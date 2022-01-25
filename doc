@@ -11,5 +11,7 @@ video-viewer --input-width=1920 --input-height=1080 /dev/video0
 
 
 # onnyx, uczenie od zera, 
-
 # https://www.youtube.com/watch?v=sN6aT9TpltU&list=PL5B692fm6--uQRRDTPsJDp4o0xbzkoyf8&index=11
+
+# Camera Streaming and Multimedia
+# https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-streaming.md
