@@ -1,3 +1,15 @@
+docker/run.sh
+
+video-viewer /dev/video0
+
+imagenet
+detectnet /dev/video0 
+
+
+video-viewer --input-width=1920 --input-height=1080 /dev/video0
+# 1024×576, 1152×648, 1280×720, 1366×768, 1600×900, 1920×1080
+
+
 # onnyx, uczenie od zera, 
 
 # https://www.youtube.com/watch?v=sN6aT9TpltU&list=PL5B692fm6--uQRRDTPsJDp4o0xbzkoyf8&index=11
