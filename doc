@@ -6,7 +6,7 @@ imagenet
 detectnet /dev/video0 
 
 
-video-viewer --input-width=1920 --input-height=1080 /dev/video0
+video-viewer --input-width=1024 --input-height=576 /dev/video0
 # 1024×576, 1152×648, 1280×720, 1366×768, 1600×900, 1920×1080
 
 
@@ -15,3 +15,13 @@ video-viewer --input-width=1920 --input-height=1080 /dev/video0
 
 # Camera Streaming and Multimedia
 # https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-streaming.md
+
+
+
+root@jetson:/jetson-inference/python/training/classification# python3 train.py --model-dir=models/mask2 --batch-size=4 --workers=1 --epochs=30 data/mask2
+root@jetson:/jetson-inference/python/training/classification# python3 onnx_export.py --model-dir=models/mask2^
+root@jetson:/jetson-inference/python/training/classification# imagenet --model=models/mask2/resnet18.onnx --labels=data/mask2/labels.txt --input_blob=input_0 --output_blob=output_0 data/mask2/test/Medical\ mask\ NOT\ fitted\ correctly/ data/mask2/test_output/
+
+# lobe model
+# model.onnx + label.txt
+imagenet --model=models/mask3/model.onnx --labels=data/mask3/labels.txt --input_blob=input_0 --output_blob=output_0 --input-width=1024 --input-height=576 /dev/video0 
