@@ -56,7 +56,7 @@ All images from both datasets were merged in one. I divided files from both data
 
 #### 3. Re-training ResNet-18 Model<br>
 
-Launching the Container
+Launching the Container<br>
 ```ruby
 docker/run.sh
 ```
