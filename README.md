@@ -76,7 +76,9 @@ Accuracy achieved: 83.3% which is a promising performance but yet to be further 
 
 #### 4. Checking model<br>
 ```ruby
-jetson-inference/python/training/classification# imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test/ data/Covid19/test_output/
+imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_covid/ data/Covid19/test_output/
+imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_normal/ data/Covid19/test_output/
+imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_virpneumonia/ data/Covid19/test_output/
 ```
 
 ![c3](https://user-images.githubusercontent.com/67101428/151595988-d4e4fbfc-718c-4e25-9dea-fc359947739c.jpg)
