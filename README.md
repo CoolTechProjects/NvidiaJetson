@@ -69,7 +69,7 @@ jetson-inference/python/training/classification# python3 train.py --model-dir=mo
 jetson-inference/python/training/classification# python3 onnx_export.py --model-dir=models/Covid19
 ```
 
-![image](https://user-images.githubusercontent.com/67101428/151508491-9f035372-787a-4fa8-b3ae-c13786044b4d.png)
+![image](https://user-images.githubusercontent.com/67101428/151599709-b203f805-3c1c-4e49-941c-8c65a389b13a.png)
 
 Accuracy achieved: 83.3% which is a promising performance but yet to be further improved.
 <br>
