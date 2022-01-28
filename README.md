@@ -81,7 +81,7 @@ root@jetson:/jetson-inference/python/training/classification# imagenet --model=m
 
 
 ## Video
-https://www.youtube-nocookie.com/embed/yprSOHy7r74?controls=0
+https://youtube.com/embed/yprSOHy7r74
 
 
 
