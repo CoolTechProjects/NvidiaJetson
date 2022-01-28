@@ -75,6 +75,7 @@ Accuracy achieved: 83.3% which is a promising performance but yet to be further 
 <br>
 
 #### 4. Checking model<br>
+Let's check the effectiveness of the model using independent images from three categories (covid, normal, virpneumonia).
 ```ruby
 imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_covid/ data/Covid19/test_output/
 imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_normal/ data/Covid19/test_output/
