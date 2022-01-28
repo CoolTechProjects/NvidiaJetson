@@ -31,8 +31,11 @@ Mounting Swap
 https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-transfer-learning.md#mounting-swap
 
 #### 2. Data Preparation<br>
-Merging data in one dataset. I divided files from both datasets into structure presented below.
-test ~80% of files, train ~10% of files, val ~10% of files.
+Merging data in one dataset. I divided files from both datasets into structure presented below:<br>
+- test ~80%, 
+- train ~10%, 
+- val ~10%  of total files.
+
 <br><br>
 <b>Covid19</b><br>
 ├ test<br>
