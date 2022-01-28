@@ -90,4 +90,4 @@ imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt -
 https://youtu.be/BONkoj0dQfI
 
 ## Reference
-Inspired by https://github.com/dusty-nv/jetson-inference/
+https://github.com/dusty-nv/jetson-inference/
