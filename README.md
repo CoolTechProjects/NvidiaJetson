@@ -53,7 +53,6 @@ All images from both datasets were merged in one. I divided files from both data
 │<br>
 └ label.txt<br>
 <br>
-
 #### 3. Re-training ResNet-18 Model<br>
 
 Launching the Container
@@ -63,17 +62,14 @@ docker/run.sh
 <br>
 Model training and exporting to ONNX (40 epochs)
 <br>
-
 ```ruby
 jetson-inference/python/training/classification# python3 train.py --model-dir=models/Covid19 --batch-size=4 --workers=1 --epochs=40 data/Covid19
 jetson-inference/python/training/classification# python3 onnx_export.py --model-dir=models/Covid19
 ```
-
 ![image](https://user-images.githubusercontent.com/67101428/151508491-9f035372-787a-4fa8-b3ae-c13786044b4d.png)
 
 Accuracy achieved: 83.3% which is a promising performance but yet to be further improved.
-<br><br>
-
+<br>
 
 #### 4. Checking model<br>
 ```ruby
