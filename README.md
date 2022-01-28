@@ -53,6 +53,7 @@ All images from both datasets were merged in one. I divided files from both data
 │<br>
 └ label.txt<br>
 <br>
+
 #### 3. Re-training ResNet-18 Model<br>
 
 Launching the Container
