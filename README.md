@@ -84,10 +84,8 @@ jetson-inference/python/training/classification# imagenet --model=models/Covid19
 ![n3](https://user-images.githubusercontent.com/67101428/151596037-5c3e19e3-6f49-4f94-8cc7-fbf8b050844e.jpg)
 ![v1](https://user-images.githubusercontent.com/67101428/151596092-8e2ca207-cc06-4fcf-be31-498ead116268.jpg)
 
-
 ## Video
-<a href="https://youtube.com/embed/yprSOHy7r74" target="_blank">https://youtube.com/embed/yprSOHy7r74</a>
-
+https://youtu.be/BONkoj0dQfI
 
 ## Reference
 Inspired by https://github.com/dusty-nv/jetson-inference/
