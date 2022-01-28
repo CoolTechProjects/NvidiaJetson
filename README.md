@@ -80,7 +80,9 @@ Accuracy achieved: 83.3% which is a promising performance but yet to be further 
 jetson-inference/python/training/classification# imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test/ data/Covid19/test_output/
 ```
 
-![image](https://user-images.githubusercontent.com/67101428/151514710-781c9c44-d4a7-4f24-8730-02bc59cd6eca.png)
+![c3](https://user-images.githubusercontent.com/67101428/151595988-d4e4fbfc-718c-4e25-9dea-fc359947739c.jpg)
+![n3](https://user-images.githubusercontent.com/67101428/151596037-5c3e19e3-6f49-4f94-8cc7-fbf8b050844e.jpg)
+![v1](https://user-images.githubusercontent.com/67101428/151596092-8e2ca207-cc06-4fcf-be31-498ead116268.jpg)
 
 
 ## Video
