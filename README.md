@@ -1,6 +1,6 @@
 # Machine Learning Model Applied on Chest X-Ray Images 
 ## Project purpose
-Automatic classification of COVID-19 images pneumonia from other pneumonia and normal images. Project made for "Jetson AI Specialist" certification project. Build and submited as open-source project that uses NVIDIA Jetson and elements of AI and ML with GPU acceleration. Project Type: Image Classification.
+It is an automatic classification of COVID-19 images pneumonia from other pneumonia and typical images. Project made for "Jetson AI Specialist" certification project. Build and submit as an open-source project that uses NVIDIA Jetson and elements of AI and ML with GPU acceleration. Project Type: Image Classification.
 
 ## Equipment & software used
 NVIDIA Jetson Nano 2GB Developer Kit<br>
@@ -10,27 +10,27 @@ JetPack 4.6<br>
 https://developer.nvidia.com/embedded/jetpack
 
 ## Dataset Overview
-Two datasets were used in this project, both was merged in one.
+Two datasets were used in this project; both were merged in one.
 
 #### COVID CXR Image Dataset (Research)
 source: https://www.kaggle.com/sid321axn/covid-cxr-image-dataset-research <br>
-This dataset consists of 1823 images of view of Chest X-ray images. Labeled Optical Coherence Tomography(OCT) and CXR Images used for viral pneumonia and non-pneumonia or normal cases.
+This dataset consists of 1823 images of view of Chest X-ray images. Labelled Optical Coherence Tomography(OCT) and CXR Images used for viral pneumonia and non-pneumonia or typical cases.
 
 #### Covid-19 Image Dataset
 source: https://www.kaggle.com/sid321axn/covid-cxr-image-dataset-research <br>
-Dataset consist of 137 images of COVID-19 and 317 in total containing Viral Pneumonia and Normal Chest X-Rays.
+The dataset consists of 137 images of COVID-19 and 317 in total containing Viral Pneumonia and Normal Chest X-Rays.
 
 # Project steps
 
 #### 1. Preparing enviroment<br>
-Jetson Nano enviroment prepared according to "Getting Started with Jetson Nano 2GB Developer Kit" tutorial
+Jetson Nano environment prepared according to "Getting Started with Jetson Nano 2GB Developer Kit" tutorial.
 https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit
 
-On Jetson Nano 2GB it is necessery to disable ZRAM and create a swap file (4GB) as training uses up a lot of extra memory.
+On Jetson Nano 2GB, it is necessary to disable ZRAM and create a swap file (4GB) as training uses up a lot of extra memory.
 https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-transfer-learning.md#mounting-swap
 
 #### 2. Data Preparation<br>
-All images from both datasets were merged in one. I divided files from both datasets into structure presented below:<br>
+I merged both datasets into one. I divided files from both datasets into the structure presented below:<br>
 - test ~80%, 
 - train ~10%, 
 - val ~10%  of total files.
@@ -75,7 +75,7 @@ Accuracy achieved: 83.3% which is a promising performance but yet to be further 
 <br>
 
 #### 4. Checking model<br>
-Let's check the effectiveness of the model using independent images from three categories (covid, normal, virpneumonia).
+Let's check the model's effectiveness using independent images from three categories (covid, typical, virpneumonia).
 ```ruby
 imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_covid/ data/Covid19/test_output/
 imagenet --model=models/Covid19/resnet18.onnx --labels=data/Covid19/labels.txt --input_blob=input_0 --output_blob=output_0 data/Covid19/test_input_normal/ data/Covid19/test_output/
