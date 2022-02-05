@@ -1,6 +1,6 @@
 # Machine Learning Model Applied on Chest X-Ray Images 
 ## Project purpose
-It is an automatic classification of COVID-19 images pneumonia from other pneumonia and typical images. Project made for "Jetson AI Specialist" certification project. Build and submit as an open-source project that uses NVIDIA Jetson and elements of AI and ML with GPU acceleration. Project Type: Image Classification.
+It is an automatic classification of COVID-19 images pneumonia from other pneumonia and typical x-ray images. Project made for "Jetson AI Specialist" certification project. Build and submit as an open-source project that uses NVIDIA Jetson and elements of AI and ML with GPU acceleration. Project Type: Image Classification.
 
 ## Equipment & software used
 NVIDIA Jetson Nano 2GB Developer Kit<br>
